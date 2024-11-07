@@ -129,7 +129,7 @@ const Card = ({
     >
       <motion.div
         style={{ scale, top: `calc(-5vh + ${i * 25}px)` }}
-        className="w-full max-w-7xl aspect-[2/1] rounded-[32px] overflow-hidden relative bg-white"
+        className="w-full max-w-6xl aspect-[2/1] rounded-[32px] overflow-hidden relative bg-white"
       >
         <div className="absolute inset-0 w-full h-full">
           <AnimatePresence initial={false}>
@@ -250,7 +250,7 @@ export default function Component() {
 
   return (
     <main ref={container} className="bg-white">
-      <div className="  flex items-start justify-between px-6 md:px-8 lg:px-16 py-24">
+      <div className="  flex items-start justify-between px-6 md:px-20 lg:px-32 py-24">
         <div className="max-w-2xl flex items-center justify-center">
           <h1 className="text-4xl md:text-5xl font-normal tracking-tight">
             <span className="flex items-center gap-4">
