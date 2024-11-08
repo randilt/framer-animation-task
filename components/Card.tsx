@@ -87,7 +87,7 @@ const Card = ({
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/95 to-transparent w-[85%]" />
         <div className="relative h-full flex">
-          <div className="w-[45%] p-12 text-white flex flex-col">
+          <div className="w-full md:w-[70%] lg:w-[60%] xl:w-[45%] p-8 md:p-12 text-white flex flex-col">
             <div className="flex items-start justify-between">
               <div>
                 <h2 className="text-6xl font-light tracking-tight">{title}</h2>
@@ -97,7 +97,7 @@ const Card = ({
                 <p className="md:hidden block mt-6 text-white/90 text-base font-light leading-relaxed">
                   {description}
                 </p>
-                <div className="mt-8">
+                <div className="mt-8 md:hidden block">
                   <h3 className="text-orange-500 font-medium mb-4">
                     Businesses We Work With
                   </h3>
@@ -112,7 +112,7 @@ const Card = ({
                     ))}
                   </div>
                 </div>
-                <div className="mt-8 flex md:flex-row flex-col items-start gap-8 ">
+                <div className="mt-8 flex md:hidden md:flex-row flex-col items-start gap-8 ">
                   <Button
                     variant="ghost"
                     className="text-white md:block  hover:text-white/90 p-0 h-auto font-medium hover:bg-transparent"
@@ -161,24 +161,22 @@ const Card = ({
                 ))}
               </div>
             </div>
-            <div className="mt-auto hidden md:flex md:flex-row flex-col items-center gap-4">
-              <Button
-                variant="ghost"
-                className="text-white md:block hidden hover:text-white/90 p-0 h-auto font-medium hover:bg-transparent"
-                asChild
+            <div className="mt-auto hidden md:flex items-center gap-2">
+              <div
+                // variant="ghost"
+                className="text-white text-sm md:block hidden hover:text-white/90 p-0 h-auto font-medium hover:bg-transparent"
+                // asChild
               >
                 <a
                   href={url}
-                  className="flex items-center font-light underline decoration-orange-600 decoration underline-offset-4 decoration-2"
+                  className="flex items-center gap-2 font-light underline decoration-orange-600 decoration underline-offset-4 decoration-2 whitespace-nowrap"
                 >
-                  Explore Your Sector
-                  <ArrowRight className=" h-4 w-4 text-orange-600" />
+                  <span>Explore Your Sector</span>
+                  <ArrowRight className="h-4 w-4 text-orange-600" />
                 </a>
-              </Button>
-              <div className="ml-16 md:mt-0 mt-8 md:ml-0">
+              </div>
+              <div className="md:mt-0 mt-8">
                 <MagneticButton>
-                  {/* <AnimatedButton /> */}
-
                   <AnimatedArrowButton />
                 </MagneticButton>
               </div>

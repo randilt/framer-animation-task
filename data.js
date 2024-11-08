@@ -18,7 +18,7 @@ export const cards = [
     url: '#technology',
   },
   {
-    title: 'Technology',
+    title: 'Marketing',
     sector: 'Sector',
     description:
       'Tech companies often face challenges with technology integration and effective digital marketing, which can slow down growth. We streamline operations, enhance automation, and improve overall efficiency.',
@@ -36,7 +36,7 @@ export const cards = [
     url: '#technology',
   },
   {
-    title: 'Technology',
+    title: 'Gaming',
     sector: 'Sector',
     description:
       'Tech companies often face challenges with technology integration and effective digital marketing, which can slow down growth. We streamline operations, enhance automation, and improve overall efficiency.',
@@ -54,7 +54,7 @@ export const cards = [
     url: '#technology',
   },
   {
-    title: 'Technology',
+    title: 'Education',
     sector: 'Sector',
     description:
       'Tech companies often face challenges with technology integration and effective digital marketing, which can slow down growth. We streamline operations, enhance automation, and improve overall efficiency.',
